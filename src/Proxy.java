@@ -25,9 +25,9 @@ public static LookupService ls;
 	}
 	
 	public static void runCode() throws Exception{
-		InetAddress ip1 = InetAddress.getByName("107.220.60.250"); //my ip
-		InetAddress ip2 = InetAddress.getByName("37.58.52.55"); //ip of german vpn server
-		if (isFeasible(getLat(ip1), getLon(ip2), getLat(ip2), getLon(ip2), 120)) { //9000 is the base line
+		InetAddress ip1 = InetAddress.getByName("YOUR.IPv4.PUT.HERE");
+		InetAddress ip2 = InetAddress.getByName("VPN.IPv4.PUT.HERE");
+		if (isFeasible(getLat(ip1), getLon(ip2), getLat(ip2), getLon(ip2), 9000)) { //9000 is the base line
 			System.out.println("No proxy detected.");
 		} else {
 			System.out.println("Nice try script kiddy!");
